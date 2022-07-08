@@ -16,6 +16,11 @@
 		E165D80528726856005FB752 /* MyProyectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165D80428726856005FB752 /* MyProyectStoryboardTests.swift */; };
 		E165D80F28726856005FB752 /* MyProyectStoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165D80E28726856005FB752 /* MyProyectStoryboardUITests.swift */; };
 		E165D81128726856005FB752 /* MyProyectStoryboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165D81028726856005FB752 /* MyProyectStoryboardUITestsLaunchTests.swift */; };
+		E19109592877492A00AC4531 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19109582877492A00AC4531 /* SwiftUIView.swift */; };
+		E191096528774F5C00AC4531 /* MapView in Frameworks */ = {isa = PBXBuildFile; productRef = E191096428774F5C00AC4531 /* MapView */; };
+		E191096728774F5C00AC4531 /* MyLibrary2 in Frameworks */ = {isa = PBXBuildFile; productRef = E191096628774F5C00AC4531 /* MyLibrary2 */; };
+		E191096928774F5C00AC4531 /* ReusableButton in Frameworks */ = {isa = PBXBuildFile; productRef = E191096828774F5C00AC4531 /* ReusableButton */; };
+		E191096B28774F5C00AC4531 /* ReusableText in Frameworks */ = {isa = PBXBuildFile; productRef = E191096A28774F5C00AC4531 /* ReusableText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,7 @@
 		E165D80A28726856005FB752 /* MyProyectStoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyProyectStoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E165D80E28726856005FB752 /* MyProyectStoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProyectStoryboardUITests.swift; sourceTree = "<group>"; };
 		E165D81028726856005FB752 /* MyProyectStoryboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProyectStoryboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E19109582877492A00AC4531 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E191096B28774F5C00AC4531 /* ReusableText in Frameworks */,
+				E191096528774F5C00AC4531 /* MapView in Frameworks */,
+				E191096928774F5C00AC4531 /* ReusableButton in Frameworks */,
+				E191096728774F5C00AC4531 /* MyLibrary2 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +116,7 @@
 				E165D7F628726856005FB752 /* Assets.xcassets */,
 				E165D7F828726856005FB752 /* LaunchScreen.storyboard */,
 				E165D7FB28726856005FB752 /* Info.plist */,
+				E19109582877492A00AC4531 /* SwiftUIView.swift */,
 			);
 			path = MyProyectStoryboard;
 			sourceTree = "<group>";
@@ -143,6 +154,12 @@
 			dependencies = (
 			);
 			name = MyProyectStoryboard;
+			packageProductDependencies = (
+				E191096428774F5C00AC4531 /* MapView */,
+				E191096628774F5C00AC4531 /* MyLibrary2 */,
+				E191096828774F5C00AC4531 /* ReusableButton */,
+				E191096A28774F5C00AC4531 /* ReusableText */,
+			);
 			productName = MyProyectStoryboard;
 			productReference = E165D7EA28726854005FB752 /* MyProyectStoryboard.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +232,9 @@
 				Base,
 			);
 			mainGroup = E165D7E128726854005FB752;
+			packageReferences = (
+				E191096328774F5C00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */,
+			);
 			productRefGroup = E165D7EB28726854005FB752 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +280,7 @@
 			files = (
 				E165D7F228726854005FB752 /* ViewController.swift in Sources */,
 				E165D7EE28726854005FB752 /* AppDelegate.swift in Sources */,
+				E19109592877492A00AC4531 /* SwiftUIView.swift in Sources */,
 				E165D7F028726854005FB752 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,6 +617,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E191096328774F5C00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grisMorales/MyLibraryTest";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E191096428774F5C00AC4531 /* MapView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096328774F5C00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = MapView;
+		};
+		E191096628774F5C00AC4531 /* MyLibrary2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096328774F5C00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = MyLibrary2;
+		};
+		E191096828774F5C00AC4531 /* ReusableButton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096328774F5C00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = ReusableButton;
+		};
+		E191096A28774F5C00AC4531 /* ReusableText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E191096328774F5C00AC4531 /* XCRemoteSwiftPackageReference "MyLibraryTest" */;
+			productName = ReusableText;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E165D7E228726854005FB752 /* Project object */;
 }
