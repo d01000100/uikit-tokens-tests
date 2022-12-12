@@ -1,14 +1,18 @@
-# Proyecto de ejemplo 
-Proyecto con UIKit que consume la libreria de componentes en SwiftUI
+<h1>Example project using the DLS library</h1>
 
-Este proyecto contiene una implementación de la librería que contiene los componentes del sistema de diseño dentro de un proyecto con 
+Project with UIKit that consumes the component library in SwiftUI
 
-****Recomendaciones:
+This project contains an implementation of the library that contains the design system components within a project with Swift UI
 
--Asociar repositorio de código fuente antes de la descarga del app desde la opción Preferences: -> Source Control/Git
+<h3>Recommendations:</h3>
+<ul>
+<li>Associate source code repository before downloading the app from the Preferences option:</li>
+<li>Source Control/Git</li>
+</ul>
+<ul>
+<li>When compiling the project in the app target it is recommended to use a device with iOS 13 or higher.</li>
 
--Al realizar la compilación del proyecto en el target de la app se recomienda utilizar un dispositivo con iOS 13 o superior.
-
--Considerar tener la última actualización de Xcode
+<li>Consider having the latest Xcode update</li>
+</ul>
 
 
