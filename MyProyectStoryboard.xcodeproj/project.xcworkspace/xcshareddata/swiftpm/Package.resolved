@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mylibrarytest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grisMorales/MyLibraryTest",
+      "state" : {
+        "branch" : "main",
+        "revision" : "aa202b950a964453f4994d2f5ffced80570f744a"
+      }
+    }
+  ],
+  "version" : 2
+}
